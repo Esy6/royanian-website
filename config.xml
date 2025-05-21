@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<er3er>
+	<settings>
+
+    <!-- must specify slider details otherwise IE will break -->
+    <general slide_panel_width="960" slide_panel_height="400" slide_panel_horizontal_align="center" slide_panel_vertical_align="center" />
+
+	<auto_play>
+
+		<!-- Auto play slider. -->
+		<defaults symbol="circular" time="2"/>
+		<!-- Time: Number of seconds before switching to next slide. Recommended value: 4 -->
+		<!-- Symbol: Loader icon choices: circular, linear  -->
+	</auto_play>
+
+
+		<!-- default font settings for all description boxes in each slider -->
+		<description>
+		<defaults heading_font="Trebuchet MS" paragraph_text_size="13" heading_text_margin="10, 25, 5, 25" round_corners="10, 10, 10, 10"/>
+
+		</description>
+
+    	<prev_button>
+			<defaults round_corners="5,5,5,5"/>
+			<!-- Button Look: If 55,55,55,55 is used button will be circle. 0,0,0,0 = square. Default is 5,5,5,5  -->
+			<tweenOver tint="0xFFFFFF" scaleX="1.2" scaleY="1.2"/>
+			<tweenOut tint="0x000000" />
+			</prev_button>
+
+    	<prev_symbol>
+
+			<tweenOver tint="0x000000" />
+			</prev_symbol>
+
+    	<next_button>
+			<defaults round_corners="5,5,5,5"/>
+			<tweenOver tint="0xFFFFFF"  scaleX="1.2" scaleY="1.2"/>
+			<tweenOut tint="0x000000" />
+			</next_button>
+
+    	<next_symbol>
+			<tweenOver tint="0x000000" />
+			</next_symbol>
+
+	</settings>
+
+
+<slides>
+
+<!-- First slide -->
+        <slide>
+            <url>images/simple_img_1.jpg</url>
+						<link target="_self">Services.html</link>
+						<!-- Where to go if link is clicked. You can remove this tag if no anchor link is required -->
+        </slide>
+<!-- First slide end -->
+
+
+		<!-- BRIEF TRANSITION GUIDE
+		direction: left, right, up, down
+		slicing: horizontal, vertical
+		num - number of slices each transition consists of
+		shader - transition shading type - none, flat, phong
+		cube_color - define cube color during transition (hex value)
+		duration - time for each sliced cube transition
+		delay – time each sliced cube will wait before starting transition.
+		z_multiplier - z offset enables jo-jo effect of the cubes on z axis during transition. Higher Z numbers create a pull back effect.
+		-->
+
+
+    		<!-- changing transition between first & second slide -->
+        <transition num="4" slicing="vertical" direction="down" shader="none" z_multiplier="4" />
+
+<!-- Second slide -->
+        <slide>
+       		<url>images/simple_img_2.jpg</url>
+       		<link target="_self">Services.html</link>
+
+					<!-- To remove Description Box simply delete the <description> tags -->
+					<!--<description>
+					<heading>Amazing CU3ER!</heading>
+
+					<paragraph>This template is Cu3er enabled. CU3ER - The world's most amazing Flash slider!</paragraph>
+					</description>-->
+        </slide>
+<!-- Second slide end -->
+
+				<!-- changing transition between second & third slide -->
+        <transition num="3" slicing="horizontal" direction="left" shader="phong" z_multiplier="2" />
+
+<!-- Third slide -->
+				<slide>
+          <url>images/simple_img_3.jpg</url>
+
+          <link target="_self">Services.html</link>
+        </slide>
+<!-- Third slide end -->
+
+				<!-- changing transition between third & fourth slide -->
+				<transition num="8" slicing="vertical" direction="up" shader="flat" delay="0.08" z_multiplier="1" />
+
+<!-- Fourth slide -->
+				<slide>
+       		<url>images/simple_img_4.jpg</url>
+       		<link target="_self">Services.html</link>
+        </slide>
+
+<!-- Fourth slide end -->
+
+
+				<!-- changing transition between fourth & fifth slide -->
+				<transition num="4" slicing="horizontal" direction="right" shader="phong" delay="0.05" z_multiplier="2" />
+
+	<!-- fifth  slide -->
+					<slide>
+				<url>images/simple_img_5.jpg</url>
+				<link target="_self">Services.html</link>
+			</slide>
+
+	<!-- fifth  slide end -->
+
+					<!-- changing transition between fifth  & sixth slide -->
+					<transition num="5" slicing="vertical" direction="right" shader="flat" delay="0.05" z_multiplier="3" />
+<!-- sixth  slide -->
+					<slide>
+				<url>images/simple_img_6.jpg</url>
+				<link target="_self">Services.html</link>
+			</slide>
+
+	<!-- sixth  slide end -->
+
+					<!-- changing transition between sixth  & 7th slide -->
+					<transition num="6" slicing="vertical" direction="down" shader="flat" delay="0.05" z_multiplier="1" />
+				<!-- changing transition between fifth & back to first slide -->
+<!-- 7th  slide -->
+					<slide>
+				<url>images/simple_img_7.jpg</url>
+				<link target="_self">Services.html</link>
+			</slide>
+
+	<!-- 7th  slide end -->
+
+					<!-- changing transition between 7th  & 8th slide -->
+					<transition num="7" slicing="horizontal" direction="left" shader="flat" delay="0.05" z_multiplier="2" />
+
+	<!-- 8th  slide -->
+						<slide>
+					<url>images/simple_img_8.jpg</url>
+					<link target="_self">Services.html</link>
+				</slide>
+
+		<!-- 8th  slide end -->
+
+						<!-- changing transition between 8th  & 9th slide -->
+						<transition num="8" slicing="vertical" direction="up" shader="flat" delay="0.05" z_multiplier="3" />
+
+<!-- 9th  slide -->
+					<slide>
+				<url>images/simple_img_9.jpg</url>
+				<link target="_self">Services.html</link>
+			</slide>
+
+	<!-- 9th  slide end -->
+
+					<!-- changing transition between 9th  & 10th slide -->
+					<transition num="9" slicing="horizontal" direction="down" shader="none" delay="0.05" z_multiplier="4" />
+
+<!-- 10th  slide -->
+					<slide>
+				<url>images/simple_img_10.jpg</url>
+				<link target="_self">Solution_Household.html</link>
+			</slide>
+
+	<!-- 10th  slide end -->
+
+					<!-- changing transition between 10th  & 11th slide -->
+					<transition num="10" slicing="vertical" direction="right" shader="phong" delay="0.05" z_multiplier="2" />
+<!-- 11th  slide -->
+					<slide>
+				<url>images/simple_img_11.jpg</url>
+				<link target="_self">Solution_Household.html</link>
+			</slide>
+
+	<!-- 11th  slide end -->
+
+					<!-- changing transition between 11th  & 12th slide -->
+					<transition num="11" slicing="vertical" direction="down" shader="flat" delay="0.05" z_multiplier="3" />
+<!-- 12th  slide -->
+					<slide>
+				<url>images/simple_img_12.jpg</url>
+				<link target="_self">Solution_Household.html</link>
+			</slide>
+
+	<!-- 12th  slide end -->
+
+					<!-- changing transition between 12th  & 13th slide -->
+				 <transition num="12" slicing="horizontal" direction="right" shader="phong" delay="0.05" z_multiplier="2" />
+<!-- 13th  slide -->
+					<slide>
+				<url>images/simple_img_13.jpg</url>
+				<link target="_self">Solution_Energy.html</link>
+			</slide>
+
+	<!-- 13th  slide end -->
+	            <!-- changing transition between 12th  & 13th slide -->
+				<transition num="13" slicing="horizontal" direction="left" shader="flat" delay="0.05" z_multiplier="2" />
+
+<!-- 14th  slide -->
+					<slide>
+				<url>images/simple_img_14.jpg</url>
+				<link target="_self">Solution_dental.html</link>
+			</slide>
+
+	<!-- 14th  slide end -->
+<!-- changing transition between fourth & fifth slide -->
+				<transition num="14" slicing="vertical" direction="up" shader="none" delay="0.05" z_multiplier="4" />
+
+
+
+<!-- sisth slide -->
+				<slide>
+       		<url>images/simple_img_8.jpg</url>
+       		<link target="_self">your_page_link.htm</link>
+        </slide>
+
+<!-- sisth slide end -->
+
+<!-- changing transition between fifth & sisth slide -->
+				<transition num="8" slicing="vertical" direction="up" shader="flat" delay="0.08" z_multiplier="1" />
+
+
+				<!-- changing transition between sisth & back to first slide -->
+
+				<transition z_multiplier="1" />
+
+
+	</slides>
+</er3er>
+

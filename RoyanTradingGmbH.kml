@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>Royan Trading GmbH</name>
+  <description><![CDATA[Leystrasse 104/5
+A-1200 WIEN, ÖSTERREICH]]></description>
+  <NetworkLink>
+    <name>Royan Trading GmbH</name>
+    <Link>
+      <href>http://maps.google.com/maps/ms?authuser=0&amp;vps=2&amp;hl=de&amp;ie=UTF8&amp;oe=UTF8&amp;msa=0&amp;msid=215359301883243965949.0004ed2ec7a0e89e56ee7&amp;output=kml</href>
+    </Link>
+  </NetworkLink>
+</Document>
+</kml>

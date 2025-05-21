@@ -1,0 +1,278 @@
+<?php session_start() ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Royan Trading GmbH</title>
+<meta name="description" content="Royan Trading GmbH is a worldwide operating service company in Vienna, Austria. Our core competencies are the export and import of goods and machines of all kinds all around the world especially in europe and middle east." />
+<meta name="keywords" content="royanian.com, Royan, Trading, GmbH, Vienna, Wien, Austria, Österreich, Dr. Esmail Royanian, export, import, consulting, machines, household appliances, Renewable Energy, Dental, Medical, devices, Asmar Royanian, Dragoijub, Jerry Pertovic, Contact us, www.royanian.com" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<!--  <link media="screen" rel="stylesheet" type="text/css" href="/en/system/style.css" />
+  <link media="print" rel="stylesheet" type="text/css" href="/en/system/style-print.css" />-->
+<!-- ICON -->
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+jQuery(document).ready(function(){
+	$('#contactform').submit(function(){				  
+		var action = $(this).attr('action');
+		$.post(action, { 
+			name: $('#name').val(),
+			email: $('#email').val(),
+			company: $('#company').val(),
+			subject: $('#subject').val(),
+			message: $('#message').val()
+		},
+			function(data){
+				$('#contactform #submit').attr('disabled','');
+				$('.response').remove();
+				$('#contactform').before('<p class="response">'+data+'</p>');
+				$('.response').slideDown();
+				if(data=='Message sent!') $('#contactform').slideUp();
+			}
+		); 
+		return false;
+	});
+});
+// ]]>
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67418762-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<div class="main">
+  <div class="blok_header">
+    <div class="header">
+      <div class="logo"> <a href="index.html"><img src="images/logo.gif" width="349" height="98" border="0" alt="logo" class="one" /></a> </div>
+      <div class="galeria">
+        <p><a href="#" class="thre"><img src="images/spacer.gif" alt="pisture" width="24" height="23" border="0" /></a> <a href="#" class="sek"><img src="images/spacer.gif" alt="pisture" width="24" height="23" border="0" /></a> <a href="#" class="first"><img src="images/spacer.gif" alt="pisture" width="24" height="23" border="0" /></a> </p>
+      </div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="menu_resize_bg">
+    <div class="menu_resize">
+      <div class="menu">
+        <ul>
+           <li><a href="index.html" class="active"><span>Home</span></a></li>
+          <li><a href="Services.html"><span>Services</span></a></li>
+          <li><a href="Solution.html"><span>Solution</span></a></li>
+          <li><a href="about.html"><span> About Us </span></a></li>
+          <li><a href="contact.html"><span> Contact</span></a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <form id="form1" name="form1" method="post" action="">
+          <label><span>
+            <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." />
+            </span>
+            <input name="b" type="image" src="images/search.gif" class="button" />
+          </label>
+        </form>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+  <div class="body_resize">
+    <div class="body">
+     <!--<h3>Contact Us</h3>--> 
+
+  <div class="left">
+        <h2>Contact us</h2>
+        <div id="hauptspalte">
+          <p align="justify"> Here you will find all relevant contact information. Do not hesitate to contact us. <br />
+            <br />
+          </p>
+          <table width="100%" border="0" align="left" cellpadding="8" cellspacing="8">
+            <tr>
+              <td colspan="2"><h2>Your contact in Austria:</h2><br />
+               <!-- <span class="blau_gr"><strong>Dr .E. Royanian<br />
+                  <br />
+                </strong></span>--></td>
+            </tr>
+            <tr valign="top">
+              <td width="9%"><img src="images/post2.png" width="47" height="43" alt="Postanschrift" /></td>
+              <td width="41%"><p> Leystrasse 104/5<br />
+                A-1200 VIENNA <br />
+                AUSTRIA<br /></p></td>
+            </tr>
+            <tr valign="top">
+              <td><img src="images/Tele.png" alt="Tel. &amp; Fax" width="47" height="43" /></td>
+              <td><p><strong>Phone:</strong>   +43 1 - 9252105<br />
+                <strong>FAX:</strong>   +43 1 - 9252105<br />
+                 <strong>Mobile phone:</strong>   +43 660 - 3233120<br />
+             </p></td>
+            </tr>
+            <tr valign="top">
+              <td><img src="images/email.png" width="40" alt="E-Mail" /></td>
+              <td><p><span itemprop="email">
+<a href="mailto:office@royanian.com">office@royanian.com</a>
+</span> </p>
+</td>
+</tr>
+        <!-- --> <tr valign="top">
+              <td><img src="images/adress.png" width="40" alt="E-Mail" /></td>
+              <td><p>Firmenname: Royan Trading GmbH <br />  Firmenbuch-Nr.:  ATU 62901444 <br />USt-IdNr.: ATU 62901444  </p></td>
+              
+            </tr>
+          </table>
+        </div>
+      </div>     
+    <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+    
+  <!-- googlemap -->
+     <div class="right">
+     <a href="replace-this"></a>
+     <iframe width="350" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=215359301883243965949.0004ed2ec7a0e89e56ee7&amp;hl=de&amp;ie=UTF8&amp;ll=48.239566,16.376925&amp;spn=0.003136,0.016709&amp;t=m&amp;iwloc=0004ed2ed9565bd71d0cb&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps/ms?msa=0&amp;msid=215359301883243965949.0004ed2ec7a0e89e56ee7&amp;hl=de&amp;ie=UTF8&amp;ll=48.239566,16.376925&amp;spn=0.003136,0.016709&amp;t=m&amp;iwloc=0004ed2ed9565bd71d0cb&amp;source=embed" style="color:#0000FF;text-align:left">Royan Trading GmbH</a><br>  </small>
+<p>Click For Map <br>Größere Kartenansicht<p></small>  
+     
+     
+ <h2>Get in touch!</h2>
+        <p><strong>Address</strong>:Leystrasse 104/5<br />
+A-1200 Vienna, Austria<br />
+          <strong>Phone:</strong>  +43 1 - 8080464<br />
+          <strong>FAX:</strong> +43 1 - 8080465<br />
+          <strong> mobile phone:</strong> +43 660 - 3233120<br />
+          <strong>E-mail:</strong>           info@royanian.com </p>
+   <!--     <img src="images/Twitter.gif" alt="pisture" width="287" height="70" /> -->
+        
+<!-- End googlemap -->
+<?php include("kontakt.php"); ?>
+   </div>
+     <div class="left">
+        <h2>Contact Form</h2>
+        <p>For direct inquiries, please use our contact form. </p>
+        <div class="form">
+        <!-- <form action="contact.php" method="post" id="contactform"> 
+<form action="mailto:esy1349@gmail.com" method="post" enctype="text/plain" id="contactform" onsubmit="MM_validateForm('vorname','','R','zuname','','R','email','','RisEmail');return document.MM_returnValue" >
+            <ol>
+              <li>
+                <label for="name">Your Name <span class="red">*</span></label>
+                <input id="name" name="name" class="text" />
+              </li>
+              <li>
+                <label for="email">Your email <span class="red">*</span></label>
+                <input id="email" name="email" class="text" />
+              </li>
+              <li>
+                <label for="company">Company</label>
+                <input id="company" name="company" class="text" />
+              </li>
+              <li>
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" class="text" />
+              </li>
+              <li>
+                <label for="message">Message <span class="red">*</span></label>
+                <textarea id="message" name="message" rows="6" cols="50"></textarea>
+              </li>
+              <li class="buttons">
+                <input type="image" name="imageField" id="imageField" src="images/send.gif" class="send" />
+                <div class="clr"></div>
+              </li>
+            </ol>
+          </form>
+        </div> -->
+      </div>
+      
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="FBG_blog">
+    <div class="FBG_blog_resize"> <a href="#"><img src="images/logo_body.gif" alt="pisture" width="144" height="62" border="0" /></a>
+         <!-- <div class="recent">
+        <h2>Welcome to our site</h2>
+      </div>
+      <div class="recent2">
+        <p>Royan Trading GmbH</p>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+</div>
+<div class="FBG">
+  <div class="FBG_resize">
+    <div class="left">
+      <h2>About </h2>
+      <ul>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Another Link</a></li>
+        <li><a href="#">Our Company</a></li>
+        <li><a href="#">Our Staff</a></li>
+        <li><a href="#">Mission </a></li>
+        <li><a href="#">Statement</a></li>
+      </ul>
+    </div>
+    <div class="left">
+      <h2>Services</h2>
+      <ul>
+        <li><a href="#">First Service</a></li>
+        <li><a href="#">Second Service</a></li>
+        <li><a href="#">Another Service</a></li>
+        <li><a href="#">A Fourth Service</a></li>
+      </ul>
+    </div>
+    <div class="left">
+      <h2>Media</h2>
+      <ul>
+        <li><a href="#">Image Gallery</a></li>
+        <li><a href="#">Video Gallery</a></li>
+        <li><a href="#">Audio Files</a></li>
+        <li><a href="#">The Podcast</a></li>
+      </ul>
+    </div>
+    <div class="left">
+      <h2>Blog</h2>
+      <ul>
+        <li><a href="#">Category One</a></li>
+        <li><a href="#">Category 2</a></li>
+        <li><a href="#">Another Category</a></li>
+        <li><a href="#">Category</a></li>
+        <li><a href="#">A Fifth Category</a></li>
+      </ul>
+    </div>
+    <div class="left">
+      <h2>More Links</h2>
+      <ul>
+        <li><a href="#">Sign Up Now</a></li>
+        <li><a href="#">We Are Hiring</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="left">
+      <h2>Contact Us</h2>
+      <ul>
+        <li><a href="#">Email Sales</a></li>
+        <li><a href="#">Email Support</a></li>
+        <li><a href="#">Phone: 555-555-3211</a></li>
+        <li><a href="#">Send Us Feedback</a></li>
+      </ul>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+</div>-->
+<div class="footer_resize">
+      <p class="left">© 2014 Copyright Royan Trading GmbH. All Rights Reserved. <a href="#">Home</a> | <a href="#">Contact</a> | <a href="#">RSS </a></p>
+    <p class="right"> <a href="http://www.royanian.com"></a></p>
+    <div class="clr"></div>
+  <div class="clr"></div>
+</div>
+</body>
+</html>
